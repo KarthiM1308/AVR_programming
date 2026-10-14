@@ -1,0 +1,33 @@
+<circuit version="1.0.0-SR1" rev="1402" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
+
+<item itemtype="MCU" CircId="mega328-1" mainComp="false" Show_id="true" Show_Val="false" Pos="700,456" rotation="0" hflip="1" vflip="1" label="mega328-1" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Frequency="16 MHz" Program="Traffic_light/Traffic_light/Debug/Traffic_light.hex" Auto_Load="false" Rst_enabled="false" Ext_Osc="false" Wdt_enabled="false" />
+
+<item itemtype="Led" CircId="Led-3" mainComp="false" Show_id="false" Show_Val="false" Pos="828,520" rotation="0" hflip="1" vflip="1" label="Led-3" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Green" Grounded="false" Threshold="3.5 V" MaxCurrent="0.03 A" Resistance="0.6 Ω" />
+
+<item itemtype="Led" CircId="Led-4" mainComp="false" Show_id="false" Show_Val="false" Pos="828,544" rotation="0" hflip="1" vflip="1" label="Led-4" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Yellow" Grounded="false" Threshold="2.4 V" MaxCurrent="0.03 A" Resistance="0.6 Ω" />
+
+<item itemtype="Led" CircId="Led-5" mainComp="false" Show_id="false" Show_Val="false" Pos="828,568" rotation="0" hflip="1" vflip="1" label="Led-5" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Red" Grounded="false" Threshold="1.8 V" MaxCurrent="0.03 A" Resistance="0.6 Ω" />
+
+<item itemtype="Ground" CircId="Ground-9" mainComp="false" Show_id="false" Show_Val="false" Pos="916,564" rotation="0" hflip="1" vflip="1" label="Ground-9" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Node" CircId="Node-12" mainComp="false" Pos="884,544" />
+
+<item itemtype="Node" CircId="Node-23" mainComp="false" Pos="884,548" />
+
+<item itemtype="Connector" uid="connector-15" startpinid="mega328-1-PORTB5" endpinid="Led-3-lPin" pointList="740,536,812,536,812,520" />
+
+<item itemtype="Connector" uid="connector-16" startpinid="mega328-1-PORTB4" endpinid="Led-4-lPin" pointList="740,544,812,544" />
+
+<item itemtype="Connector" uid="connector-17" startpinid="mega328-1-PORTB3" endpinid="Led-5-lPin" pointList="740,552,804,552,804,568,812,568" />
+
+<item itemtype="Connector" uid="connector-18" startpinid="Led-3-rPin" endpinid="Node-12-0" pointList="844,520,884,520,884,544" />
+
+<item itemtype="Connector" uid="connector-19" startpinid="Led-4-rPin" endpinid="Node-12-1" pointList="844,544,884,544" />
+
+<item itemtype="Connector" uid="connector-20" startpinid="Node-12-2" endpinid="Node-23-0" pointList="884,544,884,548" />
+
+<item itemtype="Connector" uid="Connector-22" startpinid="Ground-9-Gnd" endpinid="Node-23-1" pointList="916,548,884,548" />
+
+<item itemtype="Connector" uid="Connector-24" startpinid="Node-23-2" endpinid="Led-5-rPin" pointList="884,548,884,568,844,568" />
+
+</circuit>
